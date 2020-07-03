@@ -133,7 +133,7 @@ const curry = (fn, arr = []) => (...args) =>
  * param {Function} fn - 定时器每次执行调用的函数
  * param {Number} [delay = 300] - 定时器执行时间间隔
  * author: Q zhang
- * update: 2019-11-13 9:50
+ * 
  */
 export const debounce = (fn, delay) => {
   let timer = null
@@ -151,7 +151,7 @@ export const debounce = (fn, delay) => {
  * param {Function} fn - 定时器每次执行调用的函数
  * param {Number} [delay = 500] - 定时器执行时间间隔
  * author: Q zhang
- * update: 2019-11-13 9:50
+ * 
  */
 export const throttle = (fn, delay = 500) => {
   let flag = true
