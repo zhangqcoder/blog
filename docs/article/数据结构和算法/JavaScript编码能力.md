@@ -132,7 +132,7 @@ const curry = (fn, arr = []) => (...args) =>
  * description: 防抖
  * param {Function} fn - 定时器每次执行调用的函数
  * param {Number} [delay = 300] - 定时器执行时间间隔
- * author: Q zhang
+ * author: Q zhang 
  * 
  */
 export const debounce = (fn, delay) => {
