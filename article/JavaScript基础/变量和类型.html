@@ -7,7 +7,7 @@
     <meta name="generator" content="VuePress 1.5.2">
     
     <meta name="description" content="喜欢前端技术的一名小学生">
-    <link rel="preload" href="/blog/assets/css/0.styles.e9b8f5df.css" as="style"><link rel="preload" href="/blog/assets/js/app.2a422f32.js" as="script"><link rel="preload" href="/blog/assets/js/2.274d87d1.js" as="script"><link rel="preload" href="/blog/assets/js/8.041f01e7.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.09118021.js"><link rel="prefetch" href="/blog/assets/js/11.fb61cfe5.js"><link rel="prefetch" href="/blog/assets/js/12.8c5f1298.js"><link rel="prefetch" href="/blog/assets/js/13.c27179a6.js"><link rel="prefetch" href="/blog/assets/js/14.eb05c1c4.js"><link rel="prefetch" href="/blog/assets/js/15.055d4dc6.js"><link rel="prefetch" href="/blog/assets/js/3.04286c88.js"><link rel="prefetch" href="/blog/assets/js/4.78a3ca7f.js"><link rel="prefetch" href="/blog/assets/js/5.151853d8.js"><link rel="prefetch" href="/blog/assets/js/6.a5a76090.js"><link rel="prefetch" href="/blog/assets/js/7.c2412ae9.js"><link rel="prefetch" href="/blog/assets/js/9.4972ae27.js">
+    <link rel="preload" href="/blog/assets/css/0.styles.e9b8f5df.css" as="style"><link rel="preload" href="/blog/assets/js/app.35120660.js" as="script"><link rel="preload" href="/blog/assets/js/2.274d87d1.js" as="script"><link rel="preload" href="/blog/assets/js/8.041f01e7.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.043a98c2.js"><link rel="prefetch" href="/blog/assets/js/11.cdfe8501.js"><link rel="prefetch" href="/blog/assets/js/12.8964de4b.js"><link rel="prefetch" href="/blog/assets/js/13.c27179a6.js"><link rel="prefetch" href="/blog/assets/js/14.eb05c1c4.js"><link rel="prefetch" href="/blog/assets/js/15.055d4dc6.js"><link rel="prefetch" href="/blog/assets/js/3.04286c88.js"><link rel="prefetch" href="/blog/assets/js/4.78a3ca7f.js"><link rel="prefetch" href="/blog/assets/js/5.151853d8.js"><link rel="prefetch" href="/blog/assets/js/6.a5a76090.js"><link rel="prefetch" href="/blog/assets/js/7.0389febe.js"><link rel="prefetch" href="/blog/assets/js/9.74e701cf.js">
     <link rel="stylesheet" href="/blog/assets/css/0.styles.e9b8f5df.css">
   </head>
   <body>
@@ -323,7 +323,7 @@ jQuery<span class="token punctuation">.</span><span class="token function">each<
 <img src="https://upload-images.jianshu.io/upload_images/7871032-7f3a2bc6b91af78d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1200/format/webp" alt=""></p> <p>意义</p> <p>1 位用来表示符号位</p> <p>11 位用来表示指数</p> <p>52 位表示尾数</p> <p>浮点数，比如</p> <p>1</p> <p>2</p> <p>0.1 &gt;&gt; 0.0001 1001 1001 1001…（1001 无限循环）</p> <p>0.2 &gt;&gt; 0.0011 0011 0011 0011…（0011 无限循环）</p> <p>此时只能模仿十进制进行四舍五入了，但是二进制只有 0 和 1 两个，于是变为 0 舍 1 入。这即是计算机中部分浮点数运算时出现误差，丢失精度的根本原因。
 JS 的最大和最小安全值可以这样获得:</p> <div class="language-js extra-class"><pre class="language-js"><code>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Number<span class="token punctuation">.</span><span class="token constant">MAX_SAFE_INTEGER</span><span class="token punctuation">)</span> <span class="token comment">//9007199254740991</span>
 console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Number<span class="token punctuation">.</span><span class="token constant">MIN_SAFE_INTEGER</span><span class="token punctuation">)</span> <span class="token comment">//-9007199254740991</span>
-</code></pre></div><p>对于整数，前端出现问题的几率可能比较低，毕竟很少有业务需要需要用到超大整数，只要运算结果不超过 Math.pow(2, 53) 就不会丢失精度。如果实在是超过最大安全数字了，那就用 BigInt(Number)计算。</p> <p>对于小数，前端出现问题的几率还是很多的，尤其在一些电商网站涉及到金额等数据。解决方式：把小数放到位整数（乘倍数），再缩小回原来倍数（除倍数），也就是说，尽量在业务中避免处理小数</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">7/2/2020, 6:50:52 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+</code></pre></div><p>对于整数，前端出现问题的几率可能比较低，毕竟很少有业务需要需要用到超大整数，只要运算结果不超过 Math.pow(2, 53) 就不会丢失精度。如果实在是超过最大安全数字了，那就用 BigInt(Number)计算。</p> <p>对于小数，前端出现问题的几率还是很多的，尤其在一些电商网站涉及到金额等数据。解决方式：把小数放到位整数（乘倍数），再缩小回原来倍数（除倍数），也就是说，尽量在业务中避免处理小数</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">7/3/2020, 3:43:07 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
       ←
       <a href="/blog/article/" class="prev router-link-active">
         文章目录
@@ -332,6 +332,6 @@ console<span class="token punctuation">.</span><span class="token function">log<
       </a>
       →
     </span></p></div> </main></div><div class="global-ui"></div></div>
-    <script src="/blog/assets/js/app.2a422f32.js" defer></script><script src="/blog/assets/js/2.274d87d1.js" defer></script><script src="/blog/assets/js/8.041f01e7.js" defer></script>
+    <script src="/blog/assets/js/app.35120660.js" defer></script><script src="/blog/assets/js/2.274d87d1.js" defer></script><script src="/blog/assets/js/8.041f01e7.js" defer></script>
   </body>
 </html>

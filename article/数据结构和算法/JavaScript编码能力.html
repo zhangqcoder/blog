@@ -7,7 +7,7 @@
     <meta name="generator" content="VuePress 1.5.2">
     
     <meta name="description" content="喜欢前端技术的一名小学生">
-    <link rel="preload" href="/blog/assets/css/0.styles.e9b8f5df.css" as="style"><link rel="preload" href="/blog/assets/js/app.2a422f32.js" as="script"><link rel="preload" href="/blog/assets/js/2.274d87d1.js" as="script"><link rel="preload" href="/blog/assets/js/12.8c5f1298.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.09118021.js"><link rel="prefetch" href="/blog/assets/js/11.fb61cfe5.js"><link rel="prefetch" href="/blog/assets/js/13.c27179a6.js"><link rel="prefetch" href="/blog/assets/js/14.eb05c1c4.js"><link rel="prefetch" href="/blog/assets/js/15.055d4dc6.js"><link rel="prefetch" href="/blog/assets/js/3.04286c88.js"><link rel="prefetch" href="/blog/assets/js/4.78a3ca7f.js"><link rel="prefetch" href="/blog/assets/js/5.151853d8.js"><link rel="prefetch" href="/blog/assets/js/6.a5a76090.js"><link rel="prefetch" href="/blog/assets/js/7.c2412ae9.js"><link rel="prefetch" href="/blog/assets/js/8.041f01e7.js"><link rel="prefetch" href="/blog/assets/js/9.4972ae27.js">
+    <link rel="preload" href="/blog/assets/css/0.styles.e9b8f5df.css" as="style"><link rel="preload" href="/blog/assets/js/app.35120660.js" as="script"><link rel="preload" href="/blog/assets/js/2.274d87d1.js" as="script"><link rel="preload" href="/blog/assets/js/12.8964de4b.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.043a98c2.js"><link rel="prefetch" href="/blog/assets/js/11.cdfe8501.js"><link rel="prefetch" href="/blog/assets/js/13.c27179a6.js"><link rel="prefetch" href="/blog/assets/js/14.eb05c1c4.js"><link rel="prefetch" href="/blog/assets/js/15.055d4dc6.js"><link rel="prefetch" href="/blog/assets/js/3.04286c88.js"><link rel="prefetch" href="/blog/assets/js/4.78a3ca7f.js"><link rel="prefetch" href="/blog/assets/js/5.151853d8.js"><link rel="prefetch" href="/blog/assets/js/6.a5a76090.js"><link rel="prefetch" href="/blog/assets/js/7.0389febe.js"><link rel="prefetch" href="/blog/assets/js/8.041f01e7.js"><link rel="prefetch" href="/blog/assets/js/9.74e701cf.js">
     <link rel="stylesheet" href="/blog/assets/css/0.styles.e9b8f5df.css">
   </head>
   <body>
@@ -119,8 +119,8 @@
  * description: 防抖
  * param {Function} fn - 定时器每次执行调用的函数
  * param {Number} [delay = 300] - 定时器执行时间间隔
- * author: yanxu gong
- * update: 2019-11-13 9:50
+ * author: Q zhang 
+ * 
  */</span>
 <span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">debounce</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">fn<span class="token punctuation">,</span> delay</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
   <span class="token keyword">let</span> timer <span class="token operator">=</span> <span class="token keyword">null</span>
@@ -137,8 +137,8 @@
  * description: 节流
  * param {Function} fn - 定时器每次执行调用的函数
  * param {Number} [delay = 500] - 定时器执行时间间隔
- * author: yanxu gong
- * update: 2019-11-13 9:50
+ * author: Q zhang
+ * 
  */</span>
 <span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">throttle</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">fn<span class="token punctuation">,</span> delay <span class="token operator">=</span> <span class="token number">500</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
   <span class="token keyword">let</span> flag <span class="token operator">=</span> <span class="token boolean">true</span>
@@ -170,7 +170,7 @@
   <span class="token keyword">await</span> <span class="token function">sleep</span><span class="token punctuation">(</span><span class="token number">3000</span><span class="token punctuation">)</span>
   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Do other things, '</span> <span class="token operator">+</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-</code></pre></div><p>缺点： ES7 语法存在兼容性问题，有 babel 一切兼容性都不是问题</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">7/2/2020, 6:50:52 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+</code></pre></div><p>缺点： ES7 语法存在兼容性问题，有 babel 一切兼容性都不是问题</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">7/3/2020, 3:43:07 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
       ←
       <a href="/blog/article/JavaScript基础/语法和API.html" class="prev">
         语法和API
@@ -179,6 +179,6 @@
       </a>
       →
     </span></p></div> </main></div><div class="global-ui"></div></div>
-    <script src="/blog/assets/js/app.2a422f32.js" defer></script><script src="/blog/assets/js/2.274d87d1.js" defer></script><script src="/blog/assets/js/12.8c5f1298.js" defer></script>
+    <script src="/blog/assets/js/app.35120660.js" defer></script><script src="/blog/assets/js/2.274d87d1.js" defer></script><script src="/blog/assets/js/12.8964de4b.js" defer></script>
   </body>
 </html>
